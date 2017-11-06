@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Now your result</h2>
+  <h3>Your word: <strong><%= params[:attempt] %></strong></h3>
+  <h3>Time taken to answer: <em><%= (@result[:time] / 60000).floor %>mn</em></h3>
+  <h3>Your score: <strong><%= @result[:score] %></strong></h3>
+  <h3>Message: <strong><%= @result[:message] %></strong></h3>
+  <div class="btn btn-success" id="play-again">
+    <%= link_to "Play again", game_path %>
+  </div>
+
+</div>

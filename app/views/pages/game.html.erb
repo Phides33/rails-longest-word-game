@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Welcome to the longest word-game!</h2>
+  <h3 id="grid"><%= @grid.join(" ") %></h3>
+  <form action="/score" class="attempt">
+    <input type="hidden" name="grid" value=<%= @grid.join %>>
+    <input type="hidden" name="start_time" value=<%= Time.now %>>
+    <label for="attempt">What's your best shot?</label>
+    <input type="text" id="attempt" name="attempt">
+    <input type="submit" value="Try!" class="btn btn-primary lg">
+  </form>
+
+</div>
